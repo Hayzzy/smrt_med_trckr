@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrackMedz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#0f172a] text-white">
+  <div class="max-w-7xl mx-auto p-6">
+    <header class="flex items-center justify-between py-4 border-b border-teal-600">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl font-bold text-teal-400 font-[monospace]">TrackMedz</span>
+      </div>
+      <form method="GET" class="flex gap-4">
+        <input type="text" name="search" placeholder="Search medicine..." class="bg-[#1e293b] border border-teal-500 rounded px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-teal-500">
+        <button type="submit" class="bg-teal-500 hover:bg-teal-600 px-4 py-2 rounded font-semibold">Search</button>
+      </form>
+    </header>
+
+    <div class="mt-6 flex flex-wrap gap-4">
+      <label class="inline-flex items-center">
+        <input type="checkbox" name="expiry" class="form-checkbox text-teal-500">
+        <span class="ml-2">Show Expiry</span>
+      </label>
+      <label class="inline-flex items-center">
+        <input type="checkbox" name="supplier" class="form-checkbox text-teal-500">
+        <span class="ml-2">Show Supplier</span>
+      </label>
+      <label class="inline-flex items-center">
+        <input type="checkbox" name="sales" class="form-checkbox text-teal-500">
+        <span class="ml-2">Show Sales</span>
+      </label>
+    </div>
+
+    <div class="mt-8 overflow-x-auto">
+      <table class="min-w-full bg-[#1e293b] rounded-lg overflow-hidden">
+        <thead>
+          <tr class="bg-teal-600 text-left">
+            <th class="px-6 py-3 font-semibold">Medicine</th>
+            <th class="px-6 py-3 font-semibold">Batch ID</th>
+            <th class="px-6 py-3 font-semibold">Expiry Date</th>
+            <th class="px-6 py-3 font-semibold">Supplier</th>
+            <th class="px-6 py-3 font-semibold">Total Sold</th>
+            <th class="px-6 py-3 font-semibold">Profit (₹)</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-[#334155]">
+          <tr>
+            <td class="px-6 py-4">Paracetamol</td>
+            <td class="px-6 py-4">B001</td>
+            <td class="px-6 py-4">2025-01-01</td>
+            <td class="px-6 py-4">Cipla Distributors</td>
+            <td class="px-6 py-4">120</td>
+            <td class="px-6 py-4">₹850.00</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4">Amoxicillin</td>
+            <td class="px-6 py-4">B002</td>
+            <td class="px-6 py-4">2024-12-15</td>
+            <td class="px-6 py-4">Pfizer Hub</td>
+            <td class="px-6 py-4">95</td>
+            <td class="px-6 py-4">₹460.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
