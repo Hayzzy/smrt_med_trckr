@@ -1,6 +1,6 @@
 # 💊 TrackMedz – Pharmacy Dashboard
 
-TrackMedz is a minimal, dark-mode web dashboard designed for local pharmacies to monitor medicine expiry, stock levels, supplier info, and sales. Built using PHP + MySQL + TailwindCSS with a clean Spotify-inspired UI.
+TrackMedz is a minimal, dark-mode web dashboard designed for local pharmacies to monitor medicine expiry, stock levels, supplier info, and sales. Built using PHP + MySQL + TailwindCSS with a clean minimal inspired UI.
 
 ![screenshot]([https://your-screenshot-link-if-any.png](https://snipboard.io/KoiEZQ.jpg))
 
