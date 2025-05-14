@@ -15,10 +15,3 @@ TrackMedz is a minimal, dark-mode web dashboard designed for local pharmacies to
 - 🧩 Responsive layout built with Tailwind CSS
 
 ---
-
-## 🚀 Getting Started (Local Setup)
-
-### 1. Clone the repo or copy files
-
-```bash
-git clone https://github.com/yourusername/TrackMedz.git
